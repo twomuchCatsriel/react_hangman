@@ -3,12 +3,12 @@ import React from "react";
 import GameTitle from "./GameTitle";
 import CustomButton from "./CustomButton";
 
-function FrontPage({}){
+function FrontPage({setPage}){
     return(
         <div id="FrontPage">
             <GameTitle></GameTitle>
-            <CustomButton buttonID="playButton" buttonText="Play the Game"></CustomButton>
-            <CustomButton buttonID="StatsButton" buttonText="View your Stats"></CustomButton>
+            <CustomButton buttonID="playButton" buttonText="Play the Game" onClick={() => {setPage("play")}}></CustomButton>
+            <CustomButton buttonID="StatsButton" buttonText="View your Stats" onClick={() => {setPage("stats")}}></CustomButton>
         </div> 
     )
 }
