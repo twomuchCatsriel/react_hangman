@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import GameTitle from "./GameTitle";
 import CustomButton from "./CustomButton";
@@ -12,5 +12,6 @@ function FrontPage({setPage}){
         </div> 
     )
 }
+
 
 export default FrontPage;
