@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import FrontPage from './front'
+import Game from './game'
 import './App.css'
 
 function App() {
@@ -15,13 +16,13 @@ function App() {
   else if(currentPage == "play"){
     return(
       <div id='mainApp'>
-        <h1>play</h1>
+        <Game setPage={setPage}></Game>
       </div>
     )
   }
   else if(currentPage == "stats"){
     return(
-      <div id='mainapp'>
+      <div id='mainApp'>
         <h1>stats</h1>
       </div>
     )
