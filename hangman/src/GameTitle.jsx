@@ -1,9 +1,10 @@
 import React from "react";
+import Wordart from "./WordArt";
 
 function GameTitle(){
     return (
         <div id="title">
-            <img src="/wordart.png" width={400}></img>
+            <Wordart></Wordart>
             <p>A game about guessing words that get progressively longer and harder as time goes on.</p>
         </div>
     )

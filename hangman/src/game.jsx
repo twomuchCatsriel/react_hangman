@@ -1,10 +1,11 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import Wordart from "./WordArt";
 
 function Game({setPage}){
     return(
         <div id="game">
-            <h1>hi</h1>
+            <Wordart></Wordart>
             <CustomButton buttonID="menuButton" buttonText="Back to Menu" onClick={() => {setPage("main")}}></CustomButton>
         </div>
     )
