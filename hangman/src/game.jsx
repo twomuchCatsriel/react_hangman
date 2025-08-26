@@ -6,7 +6,10 @@ function Game({setPage}){
     return(
         <div id="game">
             <Wordart></Wordart>
-            <CustomButton buttonID="menuButton" buttonText="Back to Menu" onClick={() => {setPage("main")}}></CustomButton>
+
+            <div id="buttons">
+                <CustomButton buttonID="menuButton" buttonText="Back to Menu" onClick={() => {setPage("main")}}></CustomButton>
+            </div>
         </div>
     )
 }
